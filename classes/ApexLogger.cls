@@ -1,3 +1,10 @@
+/**
+ * @description       : 
+ * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @group             : 
+ * @last modified on  : 07-16-2022
+ * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+**/
 public class ApexLogger {
     //cache of log
        public static Map<String,Log> logs = new Map<String,Log>();
@@ -26,7 +33,7 @@ public class ApexLogger {
        //method to log
        @TestVisible
        private static void log(String loggerName,String logMessage){
-           if(loggerName == null || loggerName == '' ) return;
+           if(loggerName == null || loggerName == 'y' ) return;
            if(logs.get(loggerName) == null){
                createLogger(loggerName);
            }      
